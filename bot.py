@@ -2,7 +2,8 @@ import os
 import telebot
 import yt_dlp
 
-TOKEN = 8727117906:AAGT9OZ2iKW3NZF4Nz_sS9YonwAyTMK4S4U
+TOKEN = "8727117906:AAGT9OZ2iKW3NZF4Nz_sS9YonwAyTMK4S4U"
+
 bot = telebot.TeleBot(TOKEN)
 
 
@@ -43,7 +44,7 @@ def search_and_send_youtube(message):
         bot.send_audio(
             message.chat.id,
             audio,
-            caption=f"🎵 Topildi: {info.get('title', 'Musiqa')}",
+            caption=f"🎵 Topildi: {info.get('titlfixe', 'Musiqa')}",
         )
 
       os.remove(filename)
