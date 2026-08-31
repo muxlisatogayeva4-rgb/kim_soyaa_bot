@@ -60,3 +60,5 @@ def search_and_send_youtube(message):
 
 
 bot.infinity_polling()
+bot.remove_webhook()
+bot.infinity_polling()
